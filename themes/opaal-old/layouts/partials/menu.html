@@ -1,0 +1,12 @@
+<ul id="nav">
+<!--    <li><a href="http://opaal-modelchecker.com/" onfocus="blurLink(this);">Frontpage</a></li> 
+	<li><a href="http://opaal-modelchecker.com/architecture/" onfocus="blurLink(this);">Architecture</a></li>
+	<li><a href="http://opaal-modelchecker.com/download/" onfocus="blurLink(this);">Download</a></li>
+	<li><a href="http://opaal-modelchecker.com/contact/" onfocus="blurLink(this);">Contact</a></li>
+    <li><a href="http://opaal-modelchecker.com/opaal-ltsmin/" onfocus="blurLink(this);">opaal + LTSmin</a></li> -->
+
+    {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}" onfocus="blurLink(this);">{{- .Name -}}</a></li>
+	{{ end }}
+
+</ul>

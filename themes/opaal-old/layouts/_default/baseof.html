@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+    <head>
+
+
+    {{- partial "head.html" . -}}
+
+
+    </head>
+<body>
+
+<div id="wrap">
+<div id="top">
+    {{- partial "header.html" . -}}
+</div>
+<div id="content">
+<div id="left">
+    {{- block "main" . }}{{- end }}
+</div>
+<div id="right">
+
+    {{- partial "menu.html" . -}}
+    
+	<div class="box">box</div>
+</div>
+<div id="clear"></div></div>
+<div id="footer">
+    {{- partial "footer.html" . -}}
+</div>
+</div>
+
+</body></html>
